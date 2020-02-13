@@ -1,15 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var util_1 = require("../../utils/util");
+var img=require("../../utils/img.js")
 Page({
     data: {
         logs: [],
+        img:[]
+        
     },
     onLoad: function () {
+        
         this.setData({
             logs: (wx.getStorageSync('logs') || []).map(function (log) {
                 return util_1.formatTime(new Date(log));
             }),
+            img:img
         });
     },
 });
