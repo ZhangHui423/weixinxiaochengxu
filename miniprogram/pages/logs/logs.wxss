@@ -1,8 +1,14 @@
-.log-list {
+.wrap{
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 30rpx;
 }
-.log-item {
-  margin: 10rpx;
+.wrap view{
+  width: 30%;
+}
+.wrap view image{
+  width: 100%;
+  padding: 8rpx 0;
 }
